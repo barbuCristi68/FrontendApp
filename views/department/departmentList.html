@@ -13,12 +13,13 @@
             {{department.departmentName}}
         </td>
         <td class="text-center">
-            {{department.locationId.streetAddress + ", " + department.locationId.postalCode + " - " + department.locationId.city}}{{department.locationId.stateProvince ? ", " + department.locationId.stateProvince : ""}}
+            <!--{{department.locationId.streetAddress + ", " + department.locationId.postalCode + " - " + department.locationId.city}}{{department.locationId.stateProvince ? ", " + department.locationId.stateProvince : ""}}-->
+            {{department.locationId}}
         </td>
         <td class="text-center">
-            <button type="button" class="btn btn-link" ng-click="view(department.departmentId)">View</button>
-            <button type="button" class="btn btn-link" ng-click="edit(department.departmentId)">Edit</button>
-            <button type="button" class="btn btn-link" ng-click="delete(department.departmentId)">Delete</button>
+            <button type="button" class="btn btn-link" ng-click="view(department.id)">View</button>
+            <button type="button" class="btn btn-link" ng-click="edit(department.id)">Edit</button>
+            <button type="button" class="btn btn-link" ng-click="delete(department.id)">Delete</button>
         </td>
     </tr>
 </table>

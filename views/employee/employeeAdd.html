@@ -95,7 +95,7 @@
                     <div class="form-group" ng-class="{ 'has-error': employeeAddForm.manager.$invalid }">
                         <label for="manager">Manager:</label>
                         <select id="manager" name="manager" class="form-control" data-ng-model="employee.managerId"
-                                ng-options="manager.firstName + ' ' + manager.lastName for manager in managers track by manager.employeeId"></select>
+                                ng-options="manager.firstName + ' ' + manager.lastName for manager in managers track by manager.id"></select>
                     </div>
                 </div>
             </div>
